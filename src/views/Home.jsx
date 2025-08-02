@@ -105,14 +105,14 @@ function Home() {
             <UpcomingEvent
               SubHeading="IPL Hackathon"
               Description="Innovate and pitch your ideas for the future of tech. "
-              Btn={<Button BtnTitle={<Link to="./Login">Apply Now</Link>} />}
+              Btn={<Button BtnTitle={<Link to="./Login">View More</Link>} />}
             />
           </div>
           <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
             <UpcomingEvent
               SubHeading="CodeSprit"
               Description="A fast-paced coding challenge to test your skills.. "
-              Btn={<Button BtnTitle={<Link to="./Login">Apply Now</Link>} />}
+              Btn={<Button BtnTitle={<Link to="./Login">View More</Link>} />}
             />
           </div>
 
@@ -120,7 +120,7 @@ function Home() {
             <UpcomingEvent
               SubHeading="HackMania"
               Description="Build and collaborate on a project over a weekend. "
-              Btn={<Button BtnTitle={<Link to="./Login">Apply Now</Link>} />}
+              Btn={<Button BtnTitle={<Link to="./Login">View More</Link>} />}
             />
           </div>
 
@@ -128,7 +128,7 @@ function Home() {
             <UpcomingEvent
               SubHeading="DevJam"
               Description=" Team up and create a fully functional app in 48 hours. "
-              Btn={<Button BtnTitle={<Link to="./Login">Apply Now</Link>} />}
+              Btn={<Button BtnTitle={<Link to="./Login">View More</Link>} />}
             />
           </div>
         </div>
