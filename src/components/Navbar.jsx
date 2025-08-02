@@ -16,24 +16,28 @@ function Navbar({ openPage }) {
   const [isHidden, setIsHidden] = useState(true);
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-white flex-col flex lg:flex-row items-center justify-between lg:justify-around gap-5 lg:gap-15 p-5 shadow-lg">
+      <nav className="sticky top-0 z-50 bg-gradient-to-r from-gray-900 to-gray-800 flex-col flex lg:flex-row items-center justify-between lg:justify-around gap-5 lg:gap-15 p-5 shadow-xs shadow-gray-300">
         <div className="flex justify-between w-full item-center">
           <div className="flex items-center gap-1 cursor-pointer">
             <img src={Logo} alt="Logo" className="w-13" />
-            <h1 className="text-3xl md:text-4xl font-extrabold font-sans text-gray-800">
+            <h1 className="text-3xl md:text-4xl font-extrabold font-sans text-lime-400">
               Hacknity
             </h1>
           </div>
 
           <X
-            className={`size-8 ${isHidden ? "hidden" : "block"} lg:hidden`}
+            className={`size-8 ${
+              isHidden ? "hidden" : "block"
+            } lg:hidden text-gray-200  translate-y-1/4 w-9 h-9 `}
             onClick={() => {
               setIsHidden(!isHidden);
             }}
           />
 
           <AlignJustify
-            className={`size-8 ${isHidden ? "block" : "hidden"} lg:hidden`}
+            className={`size-8 ${
+              isHidden ? "block" : "hidden"
+            } lg:hidden text-gray-200  translate-y-1/4 w-9 h-9 `}
             onClick={() => {
               setIsHidden(!isHidden);
             }}
@@ -43,17 +47,19 @@ function Navbar({ openPage }) {
         <div
           className={`${
             isHidden ? "hidden" : "flex"
-          } lg:flex flex-col lg:flex-row items-center justify-between gap-5 w-full lg:w-1000 border-2 lg:border-0 border-gray-500 bg-lime-50 lg:bg-white rounded-lg pt-3 pb-4 lg:pt-0 lg:pb-0  text-lg font-semibold `}
+          } lg:flex flex-col lg:flex-row items-center justify-between gap-5 w-full lg:w-1000 border-2 lg:border-0 border-gray-700 bg-gray-900/95 lg:bg-transparent rounded-lg pt-3 pb-4 lg:pt-0 lg:pb-0 text-lg font-semibold`}
         >
-          <ul className="flex flex-col lg:flex-row gap-5 lg:gap-10 text-gray-500">
+          <ul className="flex flex-col lg:flex-row gap-5 lg:gap-10 text-gray-200">
             {NAV_LINKS.map((navObj, index) => {
               const { to, navLink } = navObj;
               return (
                 <li
                   key={to}
                   className={`${
-                    openPage === to ? "border-b-2 border-lime-500" : ""
-                  } cursor-pointer text-center hover:text-black duration-300`}
+                    openPage === to
+                      ? "border-b-2 border-lime-400 text-lime-400"
+                      : ""
+                  } cursor-pointer text-center hover:text-amber-400 duration-300`}
                   onClick={() => {
                     setIsHidden(true);
                   }}
@@ -65,7 +71,7 @@ function Navbar({ openPage }) {
           </ul>
 
           <div
-            className=" cursor-pointer text-gray-600 hover:text-gray-800 duration-300"
+            className="cursor-pointer text-gray-200 hover:text-amber-400 duration-300"
             onClick={() => {
               setIsHidden(true);
             }}
