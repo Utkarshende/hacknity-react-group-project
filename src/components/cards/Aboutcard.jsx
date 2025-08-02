@@ -1,35 +1,43 @@
-import React from 'react'
+import React from 'react';
 
-function Aboutcard( individualMember) {
+function Aboutcard({ profilephoto, noun, role, social }) {
   return (
-          <div
-            className='px-28 py-6 rounded-2xl flex flex-col items-center text-center'
-            key={individualMember.name} // Using noun as key,as each noun is diff.//
+    <div
+      className='relative bg-gray-100 border-2 border-gray-200 p-8 rounded-3xl flex flex-col items-center text-center shadow-lg transition-all duration-300 hover:scale-105 hover:border-amber-500'
+    >
+     
+      <div className="relative mb-8 group">
+        <img
+          src={profilephoto}
+          className='size-48 rounded-full border-2 border-amber-500 p-1 transition-transform duration-300 group-hover:scale-105'
+          alt={`${noun}'s profile`}
+        />
+        <p className='absolute bottom-[-1.5rem] left-1/2 transform -translate-x-1/2 py-2 px-6 bg-gray-50 rounded-full text-amber-600 text-lg font-bold shadow-md tracking-wide border-2 border-amber-500'>
+          {noun}
+        </p>
+      </div>
+
+      <p className='text-gray-700 text-md font-medium mt-6'>{role}</p>
+      
+      <div className='flex mt-6 gap-4'> 
+        {social.map((socialLink, index) => (
+          <a
+            href={socialLink.url}
+            target='_blank'
+            rel='noopener noreferrer'
+            key={index}
+            className='transition-transform duration-300 hover:rotate-12'
           >
             <img
-              src={individualMember.profilephoto}
-              className='size-44 mb-4 rounded-t-2xl border-2 border-gray-100' 
-              alt={`${individualMember.noun}'s profile`}
+              src={socialLink.icon}
+              className='size-10 bg-gray-200 p-2 rounded-full border-2 border-gray-300 hover:border-lime-500 transition-all duration-300'
+              alt={`social icon`}
             />
-            <p className='py-2 px-6 bg-amber-500 rounded-lg text-lg font-semibold mb-2 mt-[-10px]'>{individualMember.noun}</p>
-            <p className='text-gray-700 text-sm'>{individualMember.role}</p>
-            <div className='flex mt-4 gap-4'> 
-
-              {individualMember.social.map((socialLink, socialIndex) => (
-                <a
-                  href={socialLink.url}
-                  target='_blank'
-                  key={socialLink.url}>
-                  <img
-                    src={socialLink.icon}
-                    className='size-8 bg-gray-200 p-1 rounded-xl transition-transform duration-200 hover:scale-120 hover:bg-gray-300'
-                    alt={`${socialLink.noun} icon`}
-                  />
-                </a>
-              ))}
+          </a>
+        ))}
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Aboutcard
+export default Aboutcard;

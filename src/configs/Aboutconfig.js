@@ -58,7 +58,7 @@ const MEMBERS= [
       {
       noun: 'Utkarsha Shende', 
       role: 'Developer', 
-      profilephoto: "", 
+      profilephoto:AyushProfile, 
       social: [
         { url: 'https://peerlist.io/scroll', icon: 'https://cdn-icons-png.flaticon.com/128/103/103946.png' },
         {  url: 'https://www.linkedin.com/in/utkarsha-shende-344b57231/', icon: 'https://cdn-icons-png.flaticon.com/128/4494/4494471.png' },
