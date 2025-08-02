@@ -50,7 +50,7 @@ function Home() {
       <div className="relative flex items-center justify-center p-8 my-30 ">
         <div className="relative text-center w-4xl">
           <div className="text-5xl md:text-7xl font-bold leading-tight mb-4 text-black">
-            Welcome to our platform
+            Welcome to our <span className="text-black px-2 rounded-xl bg-lime-300 ">Hacknity</span>
           </div>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
             Join us and unlock your potential and participate in exciting
