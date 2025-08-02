@@ -11,6 +11,7 @@ import SkillSImg from "../../src/assets/Skills.png";
 import CollaborationImg from "../../src/assets/Collaboration.png";
 import MentorshipImp from "../../src/assets/Mentorship.png";
 import toast, { Toaster } from "react-hot-toast";
+import Footer from "../components/Footer.jsx";
 
 function Home() {
   const [formErrors, setFormErrors] = useState({});
@@ -284,6 +285,7 @@ function Home() {
         </div>
         <Toaster />
       </div>
+      <Footer/>
     </div>
   );
 }
