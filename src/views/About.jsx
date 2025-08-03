@@ -102,13 +102,13 @@ function About() {
        
         <section className="my-16">
           <hr className="border-t-2 border-dashed border-gray-300 my-12" />
-          <h1 className='text-3xl md:text-4xl font-extrabold text-center mb-8 bg-gradient-to-r from-lime-400 to-amber-400 text-transparent bg-clip-text'>
+          <h1 className='text-3xl md:text-4xl font-extrabold text-center mb-8 bg-amber-500 text-transparent bg-clip-text'>
             Meet Our <span className='text-black'>HACKNITY</span> Squad
           </h1>
           <p className='text-center text-gray-600 mb-12 max-w-2xl mx-auto'>
             These are the heroes behind the keyboards, the architects of our code, and the masterminds of your hosting experience. They may seem normal, but they're secretly powered by caffeine and brilliant ideas.
           </p>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center' >
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center' >
             {MEMBERS.map((individualMember, index) => {
               const { profilephoto, noun, role, social } = individualMember;
               return (
