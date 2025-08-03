@@ -3,7 +3,7 @@ import React from "react";
 function UpcomingEvent({ SubHeading, Description, Btn }) {
   return (
     <div>
-      <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+      <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200 h-60">
         <h3 className="text-xl font-semibold mb-2 text-orange-600">
           {SubHeading}
         </h3>
