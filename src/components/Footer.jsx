@@ -19,11 +19,11 @@ function Footer() {
           </p>
         </div>
     
-        <div className="text-center md:text-right md:mt-0">
-            <p className="text-2xl font-light text-gray-400">
+        <div className="md:text-right text-center">
+            <p className="text-[15px] text-gray-400">
               Engaging & Community-Focused <br /> Join our community!
             </p>
-            <div className="flex justify-center items-center md:justif-end  mt-4 md:space-x-6">
+            <div className="flex justify-center items-center md:justif-end space-x-4 mt-4 md:space-x-6">
                <a href="https://peerlist.io/scroll" target="_blank" >
                 <img src="https://www.roadtocode.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpeerlist.6d09d3a9.png&w=64&q=75" alt="Twitter" className="size-10 transition-transform bg-white p-2 rounded-3xl border-none hover:scale-110" />
               </a>

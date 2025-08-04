@@ -11,3 +11,4 @@ function Heading({ headingTitle, customStyle }) {
 }
 
 export default Heading;
+  

@@ -7,24 +7,24 @@ import Heading from '../components/Heading';
 
 function About() {
   return (
-    <div className="bg-gray-100 text-gray-800 min-h-screen font-sans">
+    <div className="bg-gray-100 text-gray-800 min-h-screen ">
       <Navbar openPage={"/about"} />
-      <main className="container mx-auto p-4 md:px-8 lg:px-12">
+      <main className="mx-auto p-4 lg:px-12">
 
       
-        <div className="text-center md:text-left my-16">
-          <p className='text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-lime-500 to-amber-500 text-transparent bg-clip-text'>
-            We're not just a team. We're a guild of legendary developers!
-          </p>
-          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto md:mx-0">
+        <div className="text-center md:text-left my-6">
+          
+         <Heading headingTitle={"We're not just a team. We're a guild of legendary developers!"} customStyle={" md:text-[35px]"}/>
+          
+          <p className="text-lg md:text-xl text-center justify-center items-center text-gray-600">
             Welcome to <span className='text-amber-500'>HACKNITY</span>, where code is our magic and coffee is our fuel. We're on a quest to build the ultimate platform for game creators and players, making online and offline hosting an adventure, not a chore.
           </p>
         </div>
 
-        <hr className='border-t-2 border-dashed border-gray-400 my-12' />
+        <hr className='border-t-2 border-dashed border-gray-400 my-4' />
 
-        <section className='my-16 bg-gray-50 p-8 rounded-xl shadow-lg'>
-          <h2 className='text-3xl font-extrabold text-center md:text-left mb-6 text-lime-500'>The HACKNITY Manifesto</h2>
+        <section className='my-2 bg-gray-50 p-8 rounded-xl shadow-lg'>
+          <h2 ><Heading headingTitle={"The HACKNITY Manifesto"} customStyle={"mt-[-20px] md:text-[25px]"} /></h2>
           <div className="text-md text-gray-600 space-y-6">
             <p className='flex items-start'>
               <span className='text-3xl text-amber-500 mr-4 animate-bounce'>✨</span>
@@ -45,13 +45,11 @@ function About() {
           </div>
         </section>
 
-        <hr className='border-t-2 border-dashed border-gray-400 my-12' />
+        <hr className='border-t-2 border-dashed border-gray-400 my-8' />
 
        
-        <section className="my-16">
-          <h1 className='text-3xl md:text-4xl font-extrabold text-center mb-8 bg-gradient-to-r from-lime-500 to-amber-500 text-transparent bg-clip-text'>
-            Your Game's New Home
-          </h1>
+        <section className="my-8">
+          <Heading headingTitle={"Your Game's New Home"} customStyle={"md:text-[25px]"}/>
           <p className='text-md font-light text-gray-600 text-center mb-8 max-w-3xl mx-auto'>
             HACKNITY is a magical toolbox for all your hosting needs. Here's a glimpse into the spells we've crafted to help you out:
           </p>
@@ -102,9 +100,9 @@ function About() {
        
         <section className="my-16">
           <hr className="border-t-2 border-dashed border-gray-300 my-12" />
-          <h1 className='text-3xl md:text-4xl font-extrabold text-center mb-8 bg-amber-500 text-transparent bg-clip-text'>
-            Meet Our <span className='text-black'>HACKNITY</span> Squad
-          </h1>
+          
+          <Heading headingTitle={"Meet Our HACKNITY Team"} customStyle={"mt-[-20px] md:text-[25px]"}/>
+          
           <p className='text-center text-gray-600 mb-12 max-w-2xl mx-auto'>
             These are the heroes behind the keyboards, the architects of our code, and the masterminds of your hosting experience. They may seem normal, but they're secretly powered by caffeine and brilliant ideas.
           </p>
