@@ -38,7 +38,8 @@ function HackthonList() {
       ) : (
         <div className="text-center text-xl font-medium text-gray-800 w-full max-w-4xl bg-white rounded-2xl shadow-lg p-6 sm:p-8">
           <img src={viewHackathonImg} alt="Image" className="w-70 mx-auto" />
-          No hackathons available. Try adding one!
+          No hackathons available.{" "}
+          <span className="text-lime-500">Try adding one!</span>
         </div>
       )}
     </>

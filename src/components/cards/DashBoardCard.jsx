@@ -21,7 +21,7 @@ function DashBoardCard({
 }) {
   return (
     <div className="flex flex-col items-start text-start text-gray-800 max-w-2xl bg-white rounded-2xl shadow-lg p-6 sm:p-8 mb-6 hover:shadow-xl transition-shadow duration-300">
-      <h3 className="text-3xl font-bold text-amber-600 border-b-4 border-lime-500 pb-2 mb-7 w-full">
+      <h3 className="text-2xl font-semibold text-amber-600 border-b-3 border-lime-500 pb-2 mb-7 w-full">
         {name}
       </h3>
 
