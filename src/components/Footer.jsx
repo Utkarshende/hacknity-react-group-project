@@ -5,8 +5,8 @@ import { Link } from "react-router";
 function Footer() {
   
   return (
-    <footer className='bg-gradient-to-r from-gray-900 to-gray-800 text-gray-300 py-8 px-2'>
-      <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-start">
+    <footer className='bg-gradient-to-r from-gray-900 to-gray-800 text-gray-300 py-8 container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-start'>
+      
         
         <div className="text-center md:text-left mb-8 md:mb-0 ">
           
@@ -33,7 +33,7 @@ function Footer() {
  </div>
 </div>
         <div className="md:text-right text-center">
-            <p className="text-[15px] text-gray-400">
+            <p>
               Engaging & Community-Focused <br /> Join our community!
             </p>
             <div className="flex justify-center items-center md:justif-end space-x-4 mt-4 md:space-x-6">
@@ -54,7 +54,7 @@ function Footer() {
               </a>
             </div>
           </div>
-        </div>
+        
       
     </footer>
   );
