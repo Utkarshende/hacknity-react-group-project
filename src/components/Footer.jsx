@@ -1,50 +1,53 @@
-import React from 'react'
-import Button from '../components/Button'
+import React from 'react';
+import HacknityLogo from '../../src/assets/logo.png'
+
 function Footer() {
   return (
-    <div>
-      <br/>
-      <br />
-      <hr className='border-dotted text-lime-500' />  <br/>
-      <div className='text-center md:text-[30px] font-extrabold text-gray-800'>Join us in our <span className='text-lime-500'>adventures</span> </div>
-      <p className='text-center mt-4  md:text-[20px] mx-14 text-gray-500'>We invite you to be a part of the HACKNITY journey. Whether you're launching your dream game, discovering new worlds,
-        or simply connecting with fellow enthusiasts,
-        you'll find a welcoming home here. Explore our features,
-        get started with your first host, or reach out to our team - we're excited to have you!</p>
-        <br />
-      <br />
-      <div className=' md:text-3xl font-bold mx-5 px-4 '>
-        <h1 className='text-center'>For us, it's all about <span className='text-lime-400'>
-           software </span> and the<br /> visionary <span className='text-lime-400'> people</span> who develop it.
-        </h1>
-       <div/>
-       <br/>
-       <div className='text-center'>
-        <div className='mt-5 px-4'>
-      <p className='text-[16px] font-medium text-gray-400'> Engaging & Community-Focused <br/><br/>Join our community!</p>
-      <br/>
-             <div className='flex justify-center items-center mx-5 '>      
-          <a href='https://www.instagram.com/' target='_blank'><img src='https://cdn-icons-png.flaticon.com/128/1384/1384031.png' className='size-[30px] ml-5' /></a>
-          <a href='https://github.com/' target='_blank'><img src='https://cdn-icons-png.flaticon.com/128/25/25231.png' className='size-[30px] ml-5' /></a>
-         <a href='https://www.roadtocode.org/' target='_blank'> <img src='https://cdn-icons-png.flaticon.com/128/1927/1927656.png' className='size-[30px] ml-5' /></a>
-          <a href='https://x.com/' target='_blank'><img src='https://cdn-icons-png.flaticon.com/128/5969/5969020.png' className='size-[30px] ml-5' /></a>
-         <a href='https://www.youtube.com/@roadtocode4u' target='_blank'> <img src='https://cdn-icons-png.flaticon.com/128/1077/1077046.png' className='size-[30px] ml-5' /></a>
-          </div>      
-        </div> 
-        </div>
-      </div>
-      <br/>
-      <br/>
-      
-          <hr className='border-dotted '/>
-          <br/><br/>
+    <footer className='bg-gradient-to-r from-gray-900 to-gray-800 text-gray-300 py-8 px-2'>
+      <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-start">
+        
+        <div className="text-center md:text-left mb-8 md:mb-0 ">
           
-           <div>
-             <h1 className='text-lime-400 text-2xl font-extrabold text-center'>HACKNITY</h1>
-        <br/><br/><br/><br/> </div>
-    </div>
-
-  )
+          <h2 className="text-xl  flex md:text-3xl font-extrabold text-white">
+            <img  className='h-8' src={HacknityLogo}/>
+          &nbsp;Join us on our &nbsp;<span className="text-lime-500 "> adventures</span>
+          </h2>
+          <p className="mt-4 text-base md:text-md text-gray-400">
+            We invite you to be a part of the HACKNITY journey. <br className="hidden md:block" />
+            Whether you're launching your dream game, discovering new worlds, <br className="hidden md:block" />
+            or simply connecting with fellow enthusiasts, you'll find a welcoming home here!
+          </p>
+        </div>
+    
+        <div className="text-center md:text-right md:mt-0">
+            <p className="text-2xl font-light text-gray-400">
+              Engaging & Community-Focused <br /> Join our community!
+            </p>
+            <div className="flex justify-center md:justify-end items-center mt-4 space-x-6">
+               <a href="https://peerlist.io/scroll" target="_blank" >
+                <img src="https://www.roadtocode.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpeerlist.6d09d3a9.png&w=64&q=75" alt="Twitter" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" >
+                <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Instagram" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+              </a>
+              <a href="https://github.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/25/25231.png" alt="GitHub" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110"/>
+              </a>
+              <a href="https://discord.com/" target="_blank" >
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670157.png" alt="Discord" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+              </a>
+              <a href="https://x.com/" target="_blank" >
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="Twitter" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank" >
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968852.png" alt="YouTube" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+              </a>
+            </div>
+          </div>
+        </div>
+      
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
