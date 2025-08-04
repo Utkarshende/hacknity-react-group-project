@@ -1,7 +1,20 @@
 import React from 'react';
 import HacknityLogo from '../../src/assets/logo.png'
+import { Heading } from 'lucide-react';
+
+
+
+ const navlinks=[
+  <a href='/'> Home</a>,
+  <a href='/dashboard'> Dashboard</a>,
+  <a href='/discover'> Discover</a>,
+  <a href='/about'> About</a>,
+  <a href='/hackathon'> HJackathon</a>,
+  <a href='/organize'> Organize</a>,
+  <a href='/login'>Login</a>]
 
 function Footer() {
+  
   return (
     <footer className='bg-gradient-to-r from-gray-900 to-gray-800 text-gray-300 py-8 px-2'>
       <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-start">
@@ -18,7 +31,20 @@ function Footer() {
             or simply connecting with fellow enthusiasts, you'll find a welcoming home here!
           </p>
         </div>
-    
+        <div className='text-left pb-2 px-2  text-gray-400'>
+
+      <h1 className='py-2 font-bold text-left'>Quick Links</h1>
+<div className='grid grid-cols-2 space-x-6 space-y-1'>
+  <a href='/'> Home</a>
+  <a href='/dashboard'> Dashboard</a>
+  <a href='/discover'> Discover</a>
+  <a href='/about'> About</a>
+  <a href='/hackathon'> Hackathon</a>
+
+  <a href='/login'>Login</a>
+
+ </div>
+</div>
         <div className="md:text-right text-center">
             <p className="text-[15px] text-gray-400">
               Engaging & Community-Focused <br /> Join our community!
