@@ -3,7 +3,7 @@ import React from 'react';
 function Aboutcard({ profilephoto, noun, role, social }) {
   return (
     <div
-      className='relative bg-gray-100 border- border-gray-300 p-8 rounded-3xl flex flex-col items-center text-center shadow- transition-all duration-300 hover:scale-105 hover:border-amber-500 border-1'
+      className='relative border-gray-300 p-8 rounded-3xl flex flex-col items-center text-center shadow- transition-all duration-300 hover:scale-105 hover:border-amber-500 border-1'
     >
      
       <div className="relative mb-6 ">
