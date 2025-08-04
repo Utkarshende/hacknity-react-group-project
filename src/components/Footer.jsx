@@ -23,24 +23,21 @@ function Footer() {
             <p className="text-2xl font-light text-gray-400">
               Engaging & Community-Focused <br /> Join our community!
             </p>
-            <div className="flex justify-center md:justify-end items-center mt-4 space-x-6">
+            <div className="flex justify-center items-center md:justif-end  mt-4 md:space-x-6">
                <a href="https://peerlist.io/scroll" target="_blank" >
-                <img src="https://www.roadtocode.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpeerlist.6d09d3a9.png&w=64&q=75" alt="Twitter" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+                <img src="https://www.roadtocode.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpeerlist.6d09d3a9.png&w=64&q=75" alt="Twitter" className="size-10 transition-transform bg-white p-2 rounded-3xl border-none hover:scale-110" />
               </a>
               <a href="https://www.instagram.com/" target="_blank" >
-                <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Instagram" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+                <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Instagram" className="size-10 transition-transform bg-white p-2 rounded-3xl border-none hover:scale-110" />
               </a>
               <a href="https://github.com/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/128/25/25231.png" alt="GitHub" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110"/>
-              </a>
-              <a href="https://discord.com/" target="_blank" >
-                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670157.png" alt="Discord" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+                <img src="https://cdn-icons-png.flaticon.com/128/25/25231.png" alt="GitHub" className="size-10 transition-transform bg-white p-2 rounded-3xl border-none hover:scale-110"/>
               </a>
               <a href="https://x.com/" target="_blank" >
-                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="Twitter" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="Twitter" className="size-10 transition-transform bg-white p-2 rounded-3xl border-none hover:scale-110" />
               </a>
               <a href="https://www.youtube.com/" target="_blank" >
-                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968852.png" alt="YouTube" className="size-12 transition-transform bg-white p-2 rounded-2xl border-none hover:scale-110" />
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968852.png" alt="YouTube" className="size-10 transition-transform bg-white p-2 rounded-3xl border-none hover:scale-110" />
               </a>
             </div>
           </div>
