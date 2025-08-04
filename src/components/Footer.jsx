@@ -1,17 +1,6 @@
 import React from 'react';
 import HacknityLogo from '../../src/assets/logo.png'
-import { Heading } from 'lucide-react';
-
-
-
- const navlinks=[
-  <a href='/'> Home</a>,
-  <a href='/dashboard'> Dashboard</a>,
-  <a href='/discover'> Discover</a>,
-  <a href='/about'> About</a>,
-  <a href='/hackathon'> HJackathon</a>,
-  <a href='/organize'> Organize</a>,
-  <a href='/login'>Login</a>]
+import { Link } from "react-router";
 
 function Footer() {
   
@@ -31,17 +20,15 @@ function Footer() {
             or simply connecting with fellow enthusiasts, you'll find a welcoming home here!
           </p>
         </div>
-        <div className='text-left pb-2 px-2  text-gray-400'>
+        <div className='text-center md:text-left pb-2 px-2  text-gray-400'>
 
-      <h1 className='py-2 font-bold text-left'>Quick Links</h1>
-<div className='grid grid-cols-2 space-x-6 space-y-1'>
-  <a href='/'> Home</a>
-  <a href='/dashboard'> Dashboard</a>
-  <a href='/discover'> Discover</a>
-  <a href='/about'> About</a>
-  <a href='/hackathon'> Hackathon</a>
-
-  <a href='/login'>Login</a>
+      <h1 className='py-2 font-bold md:text-left'>Quick Links</h1>
+<div className='md:grid md:grid-cols-1 space-x-2 md:space-x-6 md:space-y-1'>
+  <Link to='/'> Home</Link>
+  <Link to='/dashboard'> Dashboard</Link>
+  <Link to='/discover'> Discover</Link>
+  <Link to='/about'> About</Link>
+  <Link to='/hackathon'> Hackathon</Link>
 
  </div>
 </div>

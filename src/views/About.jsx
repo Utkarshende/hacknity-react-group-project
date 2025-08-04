@@ -13,17 +13,15 @@ function About() {
 
       
         <div className="text-center md:text-left my-6">
+        
+        <h1 className='text-3xl font-bold py-2 text-gray-800 text-center'> We're not just a team. We're a guild of <span className='text-lime-500'>legendary developers!  </span></h1>
           
-         <Heading headingTitle={"We're not just a team. We're a guild of legendary developers!"} customStyle={" md:text-[35px]"}/>
-          
-          <p className="text-lg md:text-xl text-center justify-center items-center text-gray-600">
+          <p className="text-lg  md:text-xl text-center justify-center items-center text-gray-600">
             Welcome to <span className='text-amber-500'>HACKNITY</span>, where code is our magic and coffee is our fuel. We're on a quest to build the ultimate platform for game creators and players, making online and offline hosting an adventure, not a chore.
           </p>
         </div>
 
-        <hr className='border-t-2 border-dashed border-gray-400 my-4' />
-
-        <section className='my-2 bg-gray-50 p-8 rounded-xl shadow-lg'>
+        <section className='my-1 bg-gray-50 p-8 rounded-xl shadow-lg'>
           <h2 ><Heading headingTitle={"The HACKNITY Manifesto"} customStyle={"mt-[-20px] md:text-[25px]"} /></h2>
           <div className="text-md text-gray-600 space-y-6">
             <p className='flex items-start'>
