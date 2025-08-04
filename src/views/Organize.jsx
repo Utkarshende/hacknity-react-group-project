@@ -17,7 +17,7 @@ function Organize() {
         />
         <div className="max-w-[650px] text-center lg:text-left px-4">
           <Heading
-            headingTitle={"Organize your Hackathon"}
+            headingTitle={"Bring Your Hackathon Vision to Life!"}
             customStyle={"lg:text-left! "}
           />
 
