@@ -5,7 +5,7 @@ import Button from "../Button";
 export default function HackathonCard({ hackathon }) {
   return (
     <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-      <img src={hackathon.image} alt={hackathon.title} className="h-48 w-full object-cover" />
+      <img src={hackathon.image} alt={hackathon.title} className="h-48 w-full object-fill" />
       <div className="p-6">
         <div className="flex justify-between items-start">
           <div>
@@ -45,7 +45,7 @@ export default function HackathonCard({ hackathon }) {
 
         <div className="mt-6 flex justify-between items-center">
           <p className="text-lime-600 font-medium">
-            Applications close in <strong className="animate-pulse">{hackathon.deadline}</strong>
+            Applications close in <strong className="animate-pulse text-amber-500">{hackathon.deadline}</strong>
           </p>
           <Button BtnTitle="Apply Now" />
         </div>
