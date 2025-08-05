@@ -1,10 +1,12 @@
 import React from 'react';
 import HacknityLogo from '../../src/assets/logo.png'
+import { Link } from "react-router";
 
 function Footer() {
+  
   return (
-    <footer className='bg-gradient-to-r from-gray-900 to-gray-800 text-gray-300 py-8 px-2'>
-      <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-start">
+    <footer className='bg-gradient-to-r from-gray-900 to-gray-800 text-gray-300 py-8 container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-start'>
+      
         
         <div className="text-center md:text-left mb-8 md:mb-0 ">
           
@@ -18,9 +20,20 @@ function Footer() {
             or simply connecting with fellow enthusiasts, you'll find a welcoming home here!
           </p>
         </div>
-    
+        <div className='text-center md:text-left pb-2 px-2  text-gray-400'>
+
+      <h1 className='py-2 font-bold md:text-left'>Quick Links</h1>
+<div className='md:grid md:grid-cols-1 space-x-2 md:space-x-6 md:space-y-1'>
+  <Link to='/'> Home</Link>
+  <Link to='/dashboard'> Dashboard</Link>
+  <Link to='/discover'> Discover</Link>
+  <Link to='/about'> About</Link>
+  <Link to='/hackathon'> Hackathon</Link>
+
+ </div>
+</div>
         <div className="md:text-right text-center">
-            <p className="text-[15px] text-gray-400">
+            <p>
               Engaging & Community-Focused <br /> Join our community!
             </p>
             <div className="flex justify-center items-center md:justif-end space-x-4 mt-4 md:space-x-6">
@@ -41,7 +54,7 @@ function Footer() {
               </a>
             </div>
           </div>
-        </div>
+        
       
     </footer>
   );
