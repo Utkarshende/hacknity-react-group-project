@@ -49,10 +49,10 @@ function Home() {
       <Navbar openPage={"/"} />
       <div className="relative flex items-center justify-center p-8 my-30 ">
         <div className="relative text-center w-4xl">
-          <div className="text-3xl md:text-6xl font-bold leading-tight mb-4 text-black">
-            Welcome to <span className="text-black px-2 rounded-xl bg-lime-300 ">Hacknity</span>
+          <div className="text-5xl md:text-7xl font-bold leading-tight mb-4 text-black">
+            Welcome to <span className="px-2 rounded-xl text-orange-500  font-extrabold ">Hacknity</span>
           </div>
-          <p className="text-sm md:text-base text-gray-700 mb-8">
+          <p className="text-lg md:text-lg text-gray-700 mb-8">
             Join us and unlock your potential and participate in exciting
             hackathon events.
           </p>
@@ -271,7 +271,7 @@ function Home() {
                   )}
                 </div>
                 <div className="mx-30">
-                  <ButtonSecondary BtnTitle={<img src="https://cdn-icons-png.flaticon.com/128/724/724816.png" className="h-7 "/>} />
+                  <ButtonSecondary BtnTitle={<img src="https://cdn-icons-png.flaticon.com/128/724/724816.png" className="h-7"/>} />
                 </div>
               </form>
             </div>
