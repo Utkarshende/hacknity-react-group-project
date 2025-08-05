@@ -49,10 +49,10 @@ function Home() {
       <Navbar openPage={"/"} />
       <div className="relative flex items-center justify-center p-8 my-30 ">
         <div className="relative text-center w-4xl">
-          <div className="text-3xl md:text-6xl font-bold leading-tight mb-4 text-black">
-            Welcome to <span className="text-black px-2 rounded-xl bg-lime-300 ">Hacknity</span>
+          <div className="text-5xl md:text-7xl font-bold leading-tight mb-4 text-black">
+            Welcome to <span className="px-2 rounded-xl text-orange-500  font-extrabold ">Hacknity</span>
           </div>
-          <p className="text-sm md:text-base text-gray-700 mb-8">
+          <p className="text-lg md:text-lg text-gray-700 mb-8">
             Join us and unlock your potential and participate in exciting
             hackathon events.
           </p>
@@ -105,14 +105,14 @@ function Home() {
             <UpcomingEvent
               SubHeading="NextGen Hack"
               Description="Get ready! Innovators collaborate on tech solutions at hackathon."
-              Btn={<Button BtnTitle={<Link to="./Login">View More</Link>} />}
+              Btn={<Button BtnTitle={<Link to="./Discover">View More</Link>} />}
              />
           </div>
           <div className="sm:w-1/2 lg:w-1/4 px-4 mb-8 transform transition duration-300 hover:scale-105" >
             <UpcomingEvent
               SubHeading="Quick Start Sprint"
               Description="Short hackathon, big ideas! From idea to innovation, fast."
-              Btn={<Button BtnTitle={<Link to="./Login">View More</Link>} />}
+              Btn={<Button BtnTitle={<Link to="./Discover">View More</Link>} />}
             />
           </div>
 
@@ -120,7 +120,7 @@ function Home() {
             <UpcomingEvent
               SubHeading="Onchain Summer Awards"
               Description="Build. Launch. Scale. Earn. This summer's top web3 hackathon!"
-              Btn={<Button BtnTitle={<Link to="./Login">View More</Link>} />}
+              Btn={<Button BtnTitle={<Link to="./Discover">View More</Link>} />}
             />
           </div>
 
@@ -128,7 +128,7 @@ function Home() {
             <UpcomingEvent
               SubHeading="AI Innovation Challenge"
               Description=" Team up and create a fully functional app in 48 hours. "
-              Btn={<Button BtnTitle={<Link to="./Login">View More</Link>} />}
+              Btn={<Button BtnTitle={<Link to="./Discover">View More</Link>} />}
             />
           </div>
         </div>
@@ -175,7 +175,7 @@ function Home() {
           <Heading headingTitle="How It Works" />
           <div className="flex flex-col mx-4 my-15 lg:flex-row ">
             <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">
-              <div className="flex flex-col items-center shadow-lg p-2 transform transition duration-300 hover:scale-105">
+              <div className="flex flex-col items-center shadow-lg py-5 px-2 transform transition duration-300 hover:scale-105">
                 <div className="bg-white p-6 rounded-full w-20 h-20 flex items-center justify-center border-4 border-lime-500 mb-4">
                   <span className="text-3xl font-bold text-lime-500">1</span>
                 </div>
@@ -190,7 +190,7 @@ function Home() {
             </div>
             
             <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">
-              <div className="flex flex-col items-center  shadow-lg p-2 transform transition duration-300 hover:scale-105">
+              <div className="flex flex-col items-center  shadow-lg py-5 px-2 transform transition duration-300 hover:scale-105">
                 <div className="bg-white p-6 rounded-full w-20 h-20 flex items-center justify-center border-4 border-lime-500 mb-4">
                   <span className="text-3xl font-bold text-lime-500">2</span>
                 </div>
@@ -205,7 +205,7 @@ function Home() {
             </div>
             
             <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">
-              <div className="flex flex-col items-center  shadow-lg p-2 transform transition duration-300 hover:scale-105">
+              <div className="flex flex-col items-center  shadow-lg py-5 px-2 transform transition duration-300 hover:scale-105">
                 <div className="bg-white p-6 rounded-full w-20 h-20 flex items-center justify-center border-4 border-lime-500 mb-4">
                   <span className="text-3xl font-bold text-lime-500">3</span>
                 </div>
@@ -271,7 +271,7 @@ function Home() {
                   )}
                 </div>
                 <div className="mx-30">
-                  <ButtonSecondary BtnTitle={<img src="https://cdn-icons-png.flaticon.com/128/724/724816.png" className="h-7 "/>} />
+                  <ButtonSecondary BtnTitle={<img src="https://cdn-icons-png.flaticon.com/128/724/724816.png" className="h-7"/>} />
                 </div>
               </form>
             </div>
