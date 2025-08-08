@@ -14,7 +14,7 @@ function About() {
       
         <div className="text-center md:text-left my-6">
         
-        <h1 className='text-3xl font-bold py-2 text-gray-800 text-center'> We're not just a team. We're a guild of <span className='text-lime-500'>legendary developers!  </span></h1>
+        <h1 className='text-xl font-bold py-2 text-gray-800 text-center'> We're not just a team. We're a guild of <span className='text-lime-500'>legendary developers!  </span></h1>
           
           <p className="text-lg  md:text-xl text-center justify-center items-center text-gray-600">
             Welcome to <span className='text-amber-500'>HACKNITY</span>, where code is our magic and coffee is our fuel. We're on a quest to build the ultimate platform for game creators and players, making online and offline hosting an adventure, not a chore.
