@@ -85,7 +85,7 @@ function About() {
 
        
         <section className="my-16">
-          <hr className="border-t-2 border-dashed border-gray-300 my-12" />
+         
           
           <Heading headingTitle={"Meet Our HACKNITY Team"} customStyle={"mt-[-20px] md:text-[25px]"}/>
           
