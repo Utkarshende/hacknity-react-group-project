@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { MEMBERS } from '../configs/Aboutconfig';
+import { MEMBERS, ABOUT_MANIFESTO} from '../configs/Aboutconfig';
 import Aboutcard from '../components/cards/Aboutcard';
 import Heading from '../components/Heading';
 
@@ -23,29 +23,17 @@ function About() {
 
         <section className='my-1 bg-gray-50 p-8 rounded-xl shadow-lg'>
           <h2 ><Heading headingTitle={"The HACKNITY Manifesto"} customStyle={"mt-[-20px] md:text-[25px]"} /></h2>
-          <div className="text-md text-gray-600 space-y-6">
-            <p className='flex items-start'>
-              <span className='text-3xl text-amber-500 mr-4 animate-bounce'>✨</span>
-              <span>Our mission is simple: to provide an epic platform that's <span className='text-lime-500'>intuitive</span>, robust, and community-driven. We're here to bridge the gap between game developers and their players, whether they're battling online or conquering a single-player epic.</span>
-            </p>
-            <p className='flex items-start'>
-              <span className='text-3xl text-amber-500 mr-4 animate-bounce'>🤝</span>
-              <span>We're committed to <span className='text-amber-500'>Empowering Creators</span> by giving you the tools to host your games with ease. No more tangled wires or confusing dashboards—just pure, creative flow.</span>
-            </p>
-            <p className='flex items-start'>
-              <span className='text-3xl text-amber-500 mr-4 animate-bounce'>⚡</span>
-              <span>We're obsessed with <span className='text-lime-500'>Enhancing Player Experience</span>. We promise stable, lightning-fast servers and a diverse gaming universe for players worldwide. Say goodbye to lag!</span>
-            </p>
-            <p className='flex items-start'>
-              <span className='text-3xl text-amber-500 mr-4 animate-bounce'>🌐</span>
-              <span>Finally, we're all about <span className='text-amber-500'>Fostering Community</span>. Think of us as your digital tavern—a place for developers to share wisdom, for players to find their next favorite game, and for everyone to connect and build something awesome together.</span>
-            </p>
-          </div>
-        </section>
-
-        <hr className='border-t-2 border-dashed border-gray-400 my-8' />
-
-       
+         {ABOUT_MANIFESTO.map(({ icon, title, description } , index) => {
+          return (
+            <div key={index} className='mb-6'>
+              <h3 className='text-2xl font-bold text-lime-500 mb-2 flex items-center'>
+                <span className='text-3xl mr-2 animate-bounce'>{icon}</span>
+                {title}
+              </h3>
+              <p className='text-md text-gray-700 font-light'>{description}</p>
+            </div>)
+           })}
+        </section>      
         <section className="my-8">
           <Heading headingTitle={"Your Game's New Home"} customStyle={"md:text-[25px]"}/>
           <p className='text-md font-light text-gray-600 text-center mb-8 max-w-3xl mx-auto'>

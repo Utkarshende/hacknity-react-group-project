@@ -12,7 +12,7 @@ function Aboutcard({ profilephoto, noun, role, social }) {
           className='size-55 rounded-full border-2 border-amber-500 p-4 transition-transform duration-300 hover:scale-105'
           alt={`${noun}'s profile`}
         />
-        <p className='absolute py-2 px-4 ml-10 -mt-4 bg-gray-100 rounded-2xl text-amber-600 text-lg font-bold shadow-md tracking-wider border-1 border-amber-500'>
+        <p className='absolute py-2 px-4 -mt-2 left-1/2 transform -translate-x-1/2 bg-gray-100 rounded-2xl text-amber-600 text-lg font-bold shadow-md tracking-wider border-1 border-amber-500'>
           {noun}
         </p>
       </div>
