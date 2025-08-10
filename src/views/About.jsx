@@ -22,7 +22,7 @@ function About() {
         </div>
 
         <section className='my-1 bg-gray-50 p-8 rounded-xl shadow-lg'>
-          <h2 ><Heading headingTitle={"The HACKNITY Manifesto"} customStyle={"mt-[-20px] md:text-[25px]"} /></h2>
+          <h2 ><Heading headingTitle={"The HACKNITY Manifesto"} customStyle={"mt-[-20px] md:text-[20px]"} /></h2>
          {ABOUT_MANIFESTO.map(({ icon, title, description } , index) => {
           return (
             <div key={index} className='mb-6'>
