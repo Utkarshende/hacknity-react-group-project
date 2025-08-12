@@ -1,6 +1,6 @@
 import React from 'react';
 import HacknityLogo from '../../src/assets/logo.png';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { FaGithub, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 function Footer() {
