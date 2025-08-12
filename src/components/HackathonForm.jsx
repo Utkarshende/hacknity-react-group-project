@@ -143,7 +143,7 @@ function HackathonForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white shadow-xl rounded-lg p-8 w-full max-w-2xl mx-auto flex flex-col gap-6"
+      className="bg-white shadow-xl rounded-lg p-8 w-full max-w-3xl mx-auto flex flex-col gap-6 mb-10"
     >
       <h2 className="text-amber-500 font-bold text-2xl my-10">
         Create a New Hackathon
