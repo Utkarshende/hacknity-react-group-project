@@ -1,9 +1,9 @@
-import RavikantProfile from '../../src/assets/RavikantPP.png'
-import GajananProfile from '../../src/assets/GajananPP.png'
-import AyushProfile from '../../src/assets/AyushPP.png'
-import SrushtiProfile from '../../src/assets/SrushtiPP.png'
-import UtkarshaProfile from '../../src/assets/UtkarshaPP.png'
-import MaheshProfile from '../../src/assets/MaheshPP.png'
+import RavikantProfile from '../../src/assets/AboutImages/ravikantprofile.png'
+import GajananProfile from '../../src/assets/AboutImages/gajananprofile.png'
+import AyushProfile from '../../src/assets/AboutImages/ayushprofile.png'
+import SrushtiProfile from '../../src/assets/AboutImages/srushtiprofile.png'
+import UtkarshaProfile from '../../src/assets/AboutImages/utkarshaprofile.png'
+import MaheshProfile from '../../src/assets/AboutImages/maheshprofile.png'
 
 
 const socialUrl= [
