@@ -4,12 +4,12 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router";
 import Heading from "../components/Heading.jsx";
 import Button, { ButtonSecondary } from "../components/Button.jsx";
-import RegisterImg from "../../src/assets/Registration.png";
+import RegisterImg from "../../src/assets/HomeImages/Registration.png";
 import UpcomingEvent from "../components/UpcomingEvent.jsx";
 import JoinUs from "../components/JoinUs.jsx";
-import SkillSImg from "../../src/assets/Skills.png";
-import CollaborationImg from "../../src/assets/Collaboration.png";
-import MentorshipImp from "../../src/assets/Mentorship.png";
+import SkillSImg from "../../src/assets/HomeImages/Skills.png";
+import CollaborationImg from "../../src/assets/HomeImages/Collaboration.png";
+import MentorshipImp from "../../src/assets/HomeImages/Mentorship.png";
 import toast, { Toaster } from "react-hot-toast";
 import Footer from "../components/Footer.jsx";
 
